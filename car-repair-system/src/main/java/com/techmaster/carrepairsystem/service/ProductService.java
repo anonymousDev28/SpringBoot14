@@ -1,2 +1,4 @@
-package com.techmaster.carrepairsystem.service;public interface ProductService {
+package com.techmaster.carrepairsystem.service;
+
+public interface ProductService {
 }

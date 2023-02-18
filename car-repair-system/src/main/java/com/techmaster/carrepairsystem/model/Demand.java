@@ -5,9 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.sql.Time;
-import java.util.List;
+import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
@@ -37,8 +35,8 @@ public class Demand {
     )
     private Set<RepairService> repairServices;
     private String note;
-    private Time timeOrder;
-    private Time timeEstimate;
-    private Boolean status;
+    private LocalDate timeOrder;
+    private LocalDate timeEstimate;
+    private String status;
     private double totalPrice;
 }

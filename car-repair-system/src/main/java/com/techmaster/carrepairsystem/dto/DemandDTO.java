@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.ToString;
 
+import java.text.DateFormat;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -14,9 +17,9 @@ public class DemandDTO {
     // thong tin khach hang
     private CustomerDTO customerDTO;
     // thong tin can de len don ?
-    // ten khach hang
-    // so dien thoai
-    // so du tai khoan
-    // thong tin san pham
     private Set<ProductDTO> productDTOs;
+    // ngay tao don
+    private LocalDate timeOrder;
+    private String note;
+
 }
