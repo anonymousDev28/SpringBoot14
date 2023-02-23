@@ -16,11 +16,17 @@ public class Staff {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private int phone;
+    private String phone;
     @OneToOne
     @JoinColumn(name = "wallet_id")
     private Wallet wallet;
     @ManyToOne
     @JoinColumn(name = "demand_id")
     private Demand demand;
+    public Staff(String name, String phone) {
+        this.name = name;
+        this.phone = phone;
+    }
+//
+//    public String rank;
 }

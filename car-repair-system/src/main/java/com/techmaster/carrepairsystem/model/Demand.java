@@ -30,8 +30,8 @@ public class Demand {
     @ManyToMany
     @JoinTable(
             name = "repairServices_demands",
-            joinColumns = @JoinColumn(name = "RepairService_id"),
-            inverseJoinColumns = @JoinColumn(name = "Demand_id")
+            joinColumns = @JoinColumn(name = "Demand_id"),
+            inverseJoinColumns = @JoinColumn(name = "RepairService_id")
     )
     private Set<RepairService> repairServices;
     private String note;

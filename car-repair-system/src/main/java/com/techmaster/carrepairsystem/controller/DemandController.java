@@ -10,8 +10,12 @@ import org.springframework.web.bind.annotation.*;
 public class DemandController {
     @Autowired
     private DemandServiceImpl demandService;
-    @PostMapping()
+    @PostMapping
     public DemandDTO saveDemand(@RequestBody DemandDTO demandDTO){
         return demandService.createDemand(demandDTO);
+    }
+    @PutMapping("/{id}")
+    public String updateDemandWith(@PathVariable Integer id){
+        return demandService.updateDemand(id);
     }
 }

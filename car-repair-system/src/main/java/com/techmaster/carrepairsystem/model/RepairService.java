@@ -21,5 +21,11 @@ public class RepairService {
     private int id;
     private String name;
     private double fee;
-    private double timeRequired;
+    private int timeRequired;
+
+    public RepairService(String name, double fee, int timeRequired) {
+        this.name = name;
+        this.fee = fee;
+        this.timeRequired = timeRequired;
+    }
 }

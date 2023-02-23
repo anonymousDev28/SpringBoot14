@@ -17,6 +17,10 @@ import lombok.Setter;
 public class Wallet{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer account_num;
+    private int account_num;
     private int balance;
+
+    public Wallet(int balance) {
+        this.balance = balance;
+    }
 }

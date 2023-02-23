@@ -18,11 +18,9 @@ public class Product {
     private String name;
     private String color;
     private String status;
-//    private String description;
     @ManyToOne
     @JoinColumn(name = "demand_id")
     private Demand demand;
-
     public Product(int id) {
         this.id = id;
     }
